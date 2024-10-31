@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ComponentModel>
+
+<h2>Product List</h2>
+
+@await Component.InvokeAsync("ProductTable", new { data = Model })
+
+
+<h2>Weather Info</h2>
+
+@await Component.InvokeAsync("Weather", new { region = "Mykolaiv" })
+
+
